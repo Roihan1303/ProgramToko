@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="490.0" prefWidth="357.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="toko.FXMLDocumentController">
+    <children>
+        <Button fx:id="button1" defaultButton="true" layoutX="99.0" layoutY="290.0" onAction="#selesai" text="Selesai" />
+        <Label id="judul" fx:id="judul" layoutX="87.0" layoutY="14.0" minHeight="16" minWidth="69" prefHeight="44.0" prefWidth="197.0" text="TOKO BAROKAH">
+         <font>
+            <Font name="Algerian" size="25.0" />
+         </font></Label>
+      <Label id="nama" fx:id="nama" layoutX="14.0" layoutY="73.0" prefHeight="21.0" prefWidth="50.0" text="Nama">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField id="inputnama" fx:id="inputnama" layoutX="150.0" layoutY="71.0" prefHeight="25.0" prefWidth="178.0" />
+      <Label id="nomor" fx:id="nomor" layoutX="14.0" layoutY="111.0" prefHeight="21.0" prefWidth="110.0" text="Nomor Telepon">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField id="inputnomor" fx:id="inputnomor" layoutX="150.0" layoutY="109.0" prefHeight="25.0" prefWidth="178.0" />
+      <Label id="jumlah" fx:id="jumlah" layoutX="14.0" layoutY="149.0" prefHeight="21.0" prefWidth="110.0" text="Jumlah Barang">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField id="inputjumlah" fx:id="inputjumlah" layoutX="150.0" layoutY="147.0" prefHeight="25.0" prefWidth="178.0" />
+      <Label id="pilih" fx:id="pilih" layoutX="14.0" layoutY="188.0" prefHeight="21.0" prefWidth="110.0" text="Pilih Barang">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <RadioButton id="pilihr" fx:id="rdR" layoutX="150.0" layoutY="191.0" mnemonicParsing="false" text="Roti" />
+      <RadioButton id="pilihb" fx:id="rdB" layoutX="150.0" layoutY="218.0" mnemonicParsing="false" text="Buku" />
+      <RadioButton id="pilihp" fx:id="rdP" layoutX="230.0" layoutY="191.0" mnemonicParsing="false" text="Penggaris" />
+      <RadioButton id="piliha" fx:id="rdA" layoutX="230.0" layoutY="218.0" mnemonicParsing="false" text="Air Mineral" />
+      <Label fx:id="bayar" layoutX="15.0" layoutY="252.0" prefHeight="21.0" prefWidth="110.0" text="Bayar">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputbayar" layoutX="178.0" layoutY="250.0" prefHeight="25.0" prefWidth="151.0" />
+      <Label fx:id="rp" layoutX="150.0" layoutY="252.0" prefHeight="21.0" prefWidth="22.0" text="Rp">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="button2" defaultButton="true" layoutX="186.0" layoutY="290.0" onAction="#hapus" text="Hapus" textFill="RED" />
+      <TextArea fx:id="hasil" layoutX="29.0" layoutY="324.0" prefHeight="156.0" prefWidth="307.0" />
+    </children>
+</AnchorPane>
